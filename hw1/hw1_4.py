@@ -18,10 +18,17 @@ print("b(6) 2 times shifted to the right equals to " + str(b >> 2)) # 110 >> 2 =
 Special operators
 '''
 print("Special operators are 'is' and 'is not' operators.")
-print("These operators are used to compare the memory locations of two objects.")
+print("These operators are used to compare the identity of two objects, which means checking if the memory locations of two objects are same.")
 
-c = 5
-d = 6
-print("c and d is equal but they are two different variable in memory. Therefore, their 'is' operation is equal to " + str(c is d)) 
-d = 5
-print(c is d)
+c = [3,4,5]
+d = 4
+print("c and d are two different variable in memory. Therefore, their 'is' operation is equal to " + str(c is d)) 
+
+
+'''
+Membership operators
+'''
+print("Membership operators are used to check if a value is inluded in a sequence or collection, such as strings, lists, tuples, or sets. The membership operators available in Python are \"in\" and \"not in\".")
+text = "Hello, world!"
+print("Hello" in text)  # True - "Hello" is present in the string
+print("hi" not in text)  # True - "hi" is not present in the string
